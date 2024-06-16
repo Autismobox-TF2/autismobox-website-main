@@ -1,0 +1,98 @@
+site_name: Autismobox
+site_url: https://autismobox.com
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/autismobox-horizontal.png
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  features:
+    - search.suggest
+    - search.share
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+    - content.code.copy
+    - announce.dismiss
+
+
+plugins:
+    - search
+    - privacy
+    - blog:
+        blog_toc: true
+        archive_date_format: MMMM yyyy
+        categories_allowed:
+            - Server Management
+            - Tutorials
+    - tags:
+        tags_file: blog/tags.md
+    - social:
+        cards_layout_options:
+          background_color: "#B8383B"
+    - rss:
+        categories:
+          - categories
+          - tags
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: iso_datetime
+
+
+nav:
+  - Home: index.md
+  - Servers:
+      - servers/index.md
+      - Server Management: servers/server-management.md
+  - Blog:
+      - blog/index.md
+      - Tags: blog/tags.md
+
+extra:
+  generator: false
+
+hooks:
+  - hooks/socialmedia.py
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - footnotes
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+repo_url: https://github.com/Autismobox-TF2/autismobox-website-main
