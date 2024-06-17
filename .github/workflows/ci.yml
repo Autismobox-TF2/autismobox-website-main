@@ -4,9 +4,6 @@ on:
     branches:
       - master 
       - main
-  pull_request:
-    types: [ opened, edited, reopened, review_requested ]
-    branches: [ master, develop ]
 permissions:
   contents: write
 jobs:
