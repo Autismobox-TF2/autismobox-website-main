@@ -23,7 +23,6 @@ theme:
     - content.action.view
     - content.tooltips
     - content.code.copy
-    - announce.dismiss
 
 
 plugins:
