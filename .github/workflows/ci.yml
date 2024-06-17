@@ -7,6 +7,8 @@ on:
   pull_request:
     types: [ opened, edited, reopened, review_requested ]
     branches: [ master, develop ]
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
