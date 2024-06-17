@@ -1,6 +1,5 @@
 ---
-date:
-  created: 2023-12-31
+date: 2023-12-31
 categories:
     - Server Management
 tags:
@@ -133,7 +132,7 @@ tags on separate lines and adding new lines between the tags and the content.
 
 :smile: :fontawesome-regular-face-laugh-wink: 
 
-![Image title](/assets/autismobox_transparent.png){ width="300"}
+![Image title](../../assets/autismobox_transparent.png){ width="300"}
 Test text next to image
 
 - Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
