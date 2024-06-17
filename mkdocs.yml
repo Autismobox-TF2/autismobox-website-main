@@ -2,6 +2,9 @@ site_name: Autismobox
 site_url: https://autismobox.com
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: black
   custom_dir: overrides
   logo: assets/autismobox-horizontal.png
   icon:
