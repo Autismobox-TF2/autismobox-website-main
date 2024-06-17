@@ -4,8 +4,9 @@ on:
     branches:
       - master 
       - main
-permissions:
-  contents: write
+  pull_request:
+    types: [ opened, edited, reopened, review_requested ]
+    branches: [ master, develop ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
